@@ -1,24 +1,4 @@
-# README
+#Launchpad
+ The homepage for web developers!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Set Launchpad as your homepage on your browser and see upcoming tech events in your area, stay inspired with quotes and access popular sites with the ease of a click.
