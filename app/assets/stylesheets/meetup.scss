@@ -1,0 +1,128 @@
+// Place all the styles related to the Meetup controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// body {
+//   background-color: #ccc;
+//
+//   // background-image: url("http://www.photofurl.com/wp-content/uploads/2008/11/beautiful_mountain_wallpaper.jpg");
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//
+// }
+body {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   left: 0px;
+   top: 0px;
+   background-size: 100% 100%;
+   width:100%;
+   height:100%;
+   -webkit-user-select: none; -khtml-user-select: none;
+   -moz-user-select: none;
+   -o-user-select: none; user-select: none;
+   z-index:9990;
+ }
+
+
+h1 {
+  padding-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  padding-top: 12px;
+  border-top: 1px solid #cfcfd1;
+  font-size: 15px;
+}
+
+#events h2 {
+  font-weight: bold;
+}
+
+ h3 {
+   font-size: 14px;
+   font-weight: bold;
+ }
+
+#events h4 a {
+  font-weight: bold;
+}
+#meetup input{
+  width: 100px;
+}
+#meetup {
+  width: 30%;
+  float:right;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+  background-color: #ffffff;
+  background-color: rgba(255,255,255,.8);
+  padding: 10px;
+  color: #7f7f7f;
+
+}
+
+#meetup img {
+  display: none;
+}
+
+.link {
+  font-size: 15px;
+}
+
+.description_title {
+  font-size: 14px;
+}
+
+.text, #quotes {
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+
+
+}
+.text {
+  font-size: 20px;
+}
+
+
+#quotes {
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 100px;
+
+
+
+}
+
+.text {
+  background-color: rgba(0,0,0,.2);
+  text-align: center;
+  font-size: 3.5em;
+  padding: 20px 15px 20px 40px;
+  position: fixed;
+  width: 65%;
+  margin: 20px;
+  margin-right:2.5%;
+  margin-left:2.5%;
+  border-radius: 5px;
+  float: left;
+
+}
+
+
+.welcome {
+  font-size: 1.5em;
+}
+
+.icons {
+  padding-top: 30px;
+  margin:0 auto;
+
+}
+
+.icons a {
+  color: white;
+  margin: 25px;
+}

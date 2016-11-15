@@ -1,0 +1,47 @@
+
+<!-- <p>Find me in app/views/meetup/index.html.erb</p> -->
+<!-- <h1>Meetup#index</h1> -->
+
+<div class="background">
+
+  <div id="meetup">
+    <h1>Upcoming tech events</h1>
+    <%= form_tag("/search", method: "get") do %>
+      <%= label_tag(:zip, "Enter your zip code:") %>
+      <%= number_field_tag(:zip) %>
+      <%= submit_tag("Search") %>
+    <% end %>
+
+
+    <div id="events">
+      <% @results.each do |event| %>
+        <h2>  <%= event["name"] %> </h2>
+        <h3>When:</h3><p> <%= @formatter.format_time(event) %></p>
+        <h4> <a href="" class="description_title">Description</a></h4>
+        <div class="event_description">
+          <%= (raw event["description"]) %>
+        </div>
+        <h4> <%= link_to "RSVP here", (event["event_url"])  %> </h4>
+      <% end %>
+    </div>
+  </div>
+
+
+
+  <div class="text">
+    <p class="welcome">Welcome!</p>
+    <p>Today is <%= Time.now.strftime('%A, %B %d, %Y %I:%M %p') %></p>
+
+    <div id= "quotes">
+      <p><%= (raw @quote[0]['content'])%></p>
+      <p>-<%=(raw @quote[0]['title'])%>-</p>
+    </div>
+
+    <div class="icons">
+      <a href="https://github.com/"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      <a href="http://stackoverflow.com/"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+      <a href="http://codepen.io/" class="fa fa-codepen" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+</div>
