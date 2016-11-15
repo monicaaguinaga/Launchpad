@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'meetup_client'
-gem 'pg'
 gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -35,6 +34,13 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+end
+
+group :development, :test do
+  gem 'pg'
+end
+group :production do
+  gem 'pg'
 end
 
 group :development do
