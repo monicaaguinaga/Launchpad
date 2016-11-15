@@ -18,8 +18,10 @@ class MeetupController < ApplicationController
       page: '10',
      }
    meetup_api = MeetupApi.new
-   @events = meetup_api.open_events(params)
-   @results = @events["results"]
+   # api call
+   @events = meetup_api.open_events(params) or [] 
+   @results = @events["results"] or []
+   # end api calls
    @formatter = MeetupFormatter.new
   end
 
